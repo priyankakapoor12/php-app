@@ -11,8 +11,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                cd /var/www/html
-                git pull origin main
+                sudo rm -rf /var/www/html/*
+                sudo cp -r * /var/www/html/
                 sudo systemctl restart apache2
                 '''
             }
