@@ -76,7 +76,7 @@ $result = $conn->query("SELECT * FROM users");
 <body>
 
 <div class="container">
-    <h1>🚀 My DevOps Application</h1>
+    <h1>🚀 My DevOps Application version 1.0</h1>
     <h3>User List</h3>
 
     <table>
